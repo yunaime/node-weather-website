@@ -17,7 +17,7 @@ const forecast = (lat, lng, callback) => {
           humidity: current.humidity,
         };
   
-        callback(undefined, `It is ${data.desc}.\n It is currently ${data.temp} degress out.\n It feels like ${data.feelslike} degress out.\n It is currently ${data.humidity}% humidity`);
+        callback(undefined, `It is ${data.desc}.\n It is currently ${data.temp} degress out.\n It feels like ${data.feelslike} degress out.\n The humidity is ${data.humidity}%`);
       }
     });
   }
