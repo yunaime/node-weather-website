@@ -11,7 +11,7 @@ console.log(__filename);
 console.log(path.join(__dirname, '../public'));
 
 const app = express();
-const app = process.env.PORT || 3000; // It will be assigned by heroku or default
+const port = process.env.PORT || 3000; // It will be assigned by heroku or default
 //////////////// Documentation at expressjs.com ///////////////
 
 /////////////////// Define paths for Express config /////////////////////////
